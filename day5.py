@@ -60,3 +60,20 @@ if(new_password==password):
     print("Access granted")
 else:
     print("Access deined")
+
+#leap year checker
+year=int(input("Enter the year:"))
+if(year%4==0 and year%100!=0) or (year%400==0):
+    print(year,"is leap year")
+else:
+    print(year,"is not leap year")
+
+#temprature convertor
+temp=float(input("Enter temprature:"))
+u=input("Enter unit:(C/F)")
+if(u=='C'):
+    print(temp*9/5+32,"F")
+elif(u=='F'):
+    print((temp-32)*5/9,"C")
+else:
+    print("invalid")
