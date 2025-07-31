@@ -101,8 +101,6 @@ for name,details in student.items():
    print("student",name,"has grade",details['grade'])
 
 
-
-
 #loop through string
 language=input("Enter your favourite language:")
 for l in language:
