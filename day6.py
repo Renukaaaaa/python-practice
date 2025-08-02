@@ -28,5 +28,45 @@ for i in range(1,11):
         continue
     print(i)
 
+#reverse countdown timer
+n=int(input("Enter the number:"))
+for i in range(n,0,-1):
+    print(i)
+
+
+#break the loop on password match
+correct_password="python123"
+while True:
+    passowrd=input("enter the password:")
+    if passowrd==correct_password:
+        print("Access granted")
+        break
+    else:
+        print("Access deined")
+
+#count vowels in word
+str=input("Enter the word:")
+vowels="aeiouAEIOU"
+count=0
+for w in str:
+    if w in vowels:
+        count+=1
+print("No of vowels are:",count)
+
+#odd number between 1 to 50
+for i in range(0,50):
+    if(i%2!=0):
+        print("odd number",i)
+    else:
+        continue
+
+#factorial calculator
+num=int(input("Enter the number:"))
+fact=1
+for n in range(1,num+1):
+    fact*=n
+print("factorial of",num,"is:",fact)
+
+
 
 
