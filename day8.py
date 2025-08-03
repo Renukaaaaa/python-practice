@@ -34,5 +34,27 @@ def square(num):
 s=square(3)
 print("Square of no:",s)
 
+#calculate simple interest
+def simple_intrest(p,r,t):
+    return(p*r*t)/100
+print(simple_intrest(3000,4,9))
 
+#Birthday message
+def birthday(name,age):
+    print("happy birthday",name,"you have completed journey of ",age,"years")
+birthday("renuka",20)
 
+#split bill among friends
+def split_bills(total_amount,no_of_friends):
+    if no_of_friends==0:
+        print("bill cannot be slit in 0 students")
+    share=total_amount/no_of_friends
+    print("each student have to pay rs",share)
+print(split_bills(1000,5))
+
+#convert hours into minute and seconds
+def conversion(hours):
+    minutes=hours*60
+    seconds=hours*3600
+    print("hours:",hours,"minutes:",minutes,"seconds:",seconds)
+conversion(3)
