@@ -47,6 +47,18 @@ c=Circle(24)
 print(c.calculateArea())
 
 #fruits category
+class Fruit:
+    category='fruit'
+    def __init__(self,name,color):
+        self.name=name
+        self.color=color
+    def display(self):
+        print("Fruit name:",self.name)
+        print("Fruit color:",self.color)
+apple=Fruit("apple",'red')
+banana=Fruit("Banana",'yellow')
+apple.display()
+banana.display()
 
 
 #movies details
